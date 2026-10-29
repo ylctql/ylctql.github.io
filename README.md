@@ -1,20 +1,20 @@
 # Personal Academic Homepage
 
-简约、全英文的个人学术主页模板。暖白背景、衬线标题、绿色点缀，支持手机、键盘导航和打印。纯 HTML / CSS，无构建步骤、第三方脚本或外部字体依赖。
+Liangchen Yan 的全英文个人学术主页。暖白背景、衬线标题、绿色点缀，支持手机、键盘导航和打印。纯 HTML / CSS，无构建步骤、第三方脚本或外部字体依赖。
 
 ## 填写个人信息
 
-在 GitHub 打开 `index.html`，点击铅笔图标编辑，按中文 `TODO 1` 至 `TODO 12` 注释修改，然后提交。也可以在本地用文本编辑器修改。页面展示全英文，中文注释不会出现在网页中。
+在 GitHub 打开 `index.html`，点击铅笔图标编辑，搜索中文 `UPDATE` 注释并修改对应内容，然后提交。也可以在本地用文本编辑器修改。页面展示全英文，中文注释不会出现在网页中。
 
 优先填写以下三项：
 
 1. **真实英文姓名**：网页标题、`h1`、简介和页脚；应与 OpenReview 注册姓名一致。
 2. **真实机构**：首页 `Affiliation` 中的院系 / 实验室和学校 / 机构；同时修改 Contact 中的信息。
-3. **OpenReview 注册邮箱**：替换页面两处 `[Your OpenReview registration email]`。文字要完整展示，可改为 `<a href="mailto:name@university.edu">name@university.edu</a>`。
+3. **OpenReview 注册邮箱**：保持顶部和 Contact 两处邮箱一致。若邮箱变化，需同时修改显示文字和 `mailto:` 链接。
 
-其余按需填写：当前身份、简介、研究方向、教育经历与所在城市。所有方括号文字均为占位内容，提交给 OpenReview 前请替换或删除。
+其余按需填写：当前身份、简介、研究方向、教育经历与所在城市。主要维护位置和注意事项见 [UPDATE-NOTES.md](UPDATE-NOTES.md)。
 
-论文、Google Scholar、ORCID、GitHub、CV 的代码示例已放在 HTML 注释中，提供真实内容后再启用。没有论文时，可以删除 Publications 整个章节以及顶部和侧栏的对应导航；不要把示例当作真实成果。简历可上传到 `assets/cv.pdf`，并启用对应链接。
+GitHub 和邮箱链接已启用。Publications 章节模板保留在 HTML 注释中，补充真实论文后再启用并添加导航。Google Scholar、ORCID 或 CV 链接可在有对应资料后添加；简历可放在 `assets/cv.pdf`。
 
 ## GitHub Pages 发布
 
@@ -33,7 +33,7 @@
 
 ## OpenReview Homepage URL
 
-[OpenReview 官方注册说明](https://docs.openreview.net/getting-started/creating-an-openreview-profile/signing-up-for-openreview) 明确指出，有效个人主页应显示**姓名、所属机构和注册 OpenReview 的邮箱**。本模板为这三项预留了醒目位置，但空白模板本身不满足身份核验需要。
+[OpenReview 官方注册说明](https://docs.openreview.net/getting-started/creating-an-openreview-profile/signing-up-for-openreview) 明确指出，有效个人主页应显示**姓名、所属机构和注册 OpenReview 的邮箱**。当前页面已展示姓名、机构及学校邮箱；请确认邮箱与 OpenReview 注册资料一致。
 
 提交前请检查：
 
@@ -55,6 +55,7 @@ assets/style.css    # 排版、配色、手机与打印样式
 assets/favicon.svg  # 简洁叶片图标
 .nojekyll           # 关闭 Jekyll 处理
 README.md           # 本说明
+UPDATE-NOTES.md     # 后续维护提示
 ```
 
 双击 `index.html` 可直接预览。调整主题色可修改 `assets/style.css` 顶部的 `--paper`、`--ink` 和 `--green`。
